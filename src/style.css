@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'coolvetica';
+  src: url('./assets/fonts/coolvetica rg.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --white: #FBFBFB;
+  --black: #060606;
+  --red: #F52626;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'coolvetica', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+}
+
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.container {
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+
+header img {
+  width: 145px;
+  cursor: pointer;
+}
+
+header img:hover {
+  opacity: 0.8;
+}
+
+header a {
+  border-radius: 38px;
+  border: 1px solid var(--white);
+  background-color: transparent;
+  padding: 12px 27px;
+  color: #FBFBFB;
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  transition: all .4s ease-in-out;
+  position: relative;
+}
+
+header a:hover {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+header a i {
+  content: '';
+  display: block;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #1c1c1c;
+  color: var(--white);
+  position: absolute;
+  top: 7px;
+  right: -15px;
+  padding: 7px;
+  transform: rotate(-45deg);
+  transition: all .4s ease-in-out;
+}
+
+header a:hover i {
+  transform: rotate(-25deg);
+} 
+
+.header-hr {
+  border: 1px solid #1c1c1c;
+}
+
+
+
+/* CTA */
+main {
+  background: url(./assets/background-earn.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding-block: 7rem;
+}
+
+.main-container h1 {
+  color: #FBFBFB;
+  font-size: 125px;
+  font-weight: 400;
+  line-height: 79%;
+  letter-spacing: -3px;
+  width: 100%;
+  max-width: 786px;
+}
+
+.main-container div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 600px;
+  gap: 10px;
+}
+
+.main-container div p {
+  color: #DEDEDE;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  width: 100%;
+  max-width: 300px;
+}
+
+.main-container div a {
+  color: var(--white);
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+
+
+@media (max-width: 425px) {
+  header img {
+    width: 120px;
+  }
+
+  header a {
+    font-size: 14px;
+    padding: 11px 24px;
+  }
+
+
+  .main-container h1 {
+    font-size: 90px;
+  }
+}
