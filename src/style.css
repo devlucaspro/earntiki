@@ -104,7 +104,7 @@ header a:hover i {
 
 /* CTA */
 main {
-  background: url(./assets/background-earn.png);
+  background: url(../public/assets/background-earn.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
