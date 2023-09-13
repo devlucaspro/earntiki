@@ -2,6 +2,7 @@ import React from 'react'
 
 const Home = () => {
   return (
+    <>
     <main>
       
       <div className='container main-container'>
@@ -20,14 +21,16 @@ const Home = () => {
           </defs>
         </svg>
 
-        <h1>Ignite Your Online Business Success</h1>
+        <h1>Ignite Your Online Business <span className='red'>Success</span></h1>
         <div>
           <p>Limited-Time Exclusive: Get Your Hands on Earntiki's "How to Earn Money Online" eBook!</p>
-          <a href="#checkout">I Start Earning</a>
+          <a href="#checkout"><i className="fa-solid fa-arrow-right"></i> Start Earning</a>
         </div>
       </div>
 
     </main>
+    <hr className='header-hr' />
+    </>
   )
 }
 

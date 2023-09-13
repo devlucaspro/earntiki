@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'coolvetica';
-  src: url('./assets/fonts/coolvetica rg.otf') format('opentype');
+  src: url('./fonts/coolvetica rg.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -32,6 +32,10 @@ a {
   width: 90%;
   max-width: 1300px;
   margin: 0 auto;
+}
+
+.red {
+  color: var(--red);
 }
 
 
@@ -112,6 +116,10 @@ main {
   padding-block: 7rem;
 }
 
+.main-container svg {
+  animation: rotation 3s infinite alternate ease-in-out;
+}
+
 .main-container h1 {
   color: #FBFBFB;
   font-size: 125px;
@@ -150,9 +158,28 @@ main {
   line-height: 100%;
 }
 
+.main-container div a i {
+  background-color: #5B0505;
+  border: 1px solid var(--red);
+  border-radius: 50%;
+  padding: 1rem;
+  margin-right: .5rem;
+  transform: rotate(-45deg);
+}
 
 
-@media (max-width: 425px) {
+
+@media (max-width: 375px) {
+  .main-container h1 {
+    font-size: 80px;
+  }
+
+  .main-container div {
+    gap: 1rem;
+  }
+}
+
+@media (min-width: 376px) and (max-width: 425px) {
   header img {
     width: 120px;
   }
@@ -162,8 +189,29 @@ main {
     padding: 11px 24px;
   }
 
-
   .main-container h1 {
     font-size: 90px;
+  }
+
+  .main-container div {
+    gap: 1.5rem;
+  }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .main-container h1 {
+    font-size: 110px;
+  }
+}
+
+
+
+
+/* animations */
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  } to {
+    transform: rotate(-28deg);
   }
 }
