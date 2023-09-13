@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'coolvetica';
-  src: url('./fonts/coolvetica rg.otf') format('opentype');
+  src: url('../public/fonts/coolvetica rg.otf') format('opentype');
   font-weight: normal;
   font-style: normal;
 }
